@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>café</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="header">
+    <a href="/" class="logo-container">
+      <img src='./img/coffee01.png' />
+    </a>
+    <div class="options">
+      <a href="./overview.html" class="option">Shop</a>
+      <a href="/shop" class="option">Contact</a>
+      <a href="/signin" class="option">Sign In</a>
+      <div class="cart-icon" onclick="cartToggle()">
+        <img class="shopping-icon" src="./img/f01.png" alt="">
+      </div>
+      <div class="cart-dropdown">
+        <div class="cart-items">
+          <div class="cart-item">
+             <img src="./img/cake06.jpg" alt="item">
+             <div class="item-details">
+               <span class="name">tiramisu</span>
+               <span class="price">4 * $120</span>
+             </div>
+          </div>
+          <div class="cart-item">
+            <img src="./img/cake07.jpg" alt="item">
+            <div class="item-details">
+              <span class="name">black tea</span>
+              <span class="price">1 * $60</span>
+            </div>
+          </div>
+        </div>
+        <button class="custom-button">GO TO CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 class="primary-title">期末Project</h2>
+    <div class="secondary-title">黃子珈&許琦涓</div>
+</div>
+  
+  <div class="homepage">
+    <div class="directory-menu">
+      <div class="menu-item">
+          <img class="background-image" src="./img/cake01.jpg" alt="">
+        <a href="./hats.html" class="content">
+            <h1 class="title">cake</h1>
+            <span class="subtitle">SHOP NOW</span>          
+        </a>
+      </div>
+      <div class="menu-item">
+        <img class="background-image" src="./img/cake02.jpg" alt="">
+        <a href="./jackets.html" class="content">
+          <h1 class="title">Drink</h1>
+          <span class="subtitle">SHOP NOW</span>          
+        </a>
+      </div>
+      <div class="menu-item">
+        <img class="background-image" src="./img/cake03.jpg" alt="">
+        <a href="./sneakers.html" class="content">
+          <h1 class="title">Pancake</h1>
+          <span class="subtitle">SHOP NOW</span>
+        </a>
+      </div>
+      <div class="large menu-item">
+        <img class="background-image" src="./img/cake04.jpg" alt="">
+        <a href="./womens.html" class="content">
+          <h1 class="title">Ice</h1>
+          <span class="subtitle">SHOP NOW</span>             
+        </a>
+      </div>
+      <div class="large menu-item">
+        <img class="background-image" src="./img/cake05.jpg" alt="">
+        <a href="./mens.html" class="content">
+          <h1 class="title">Salad</h1>
+          <span class="subtitle">SHOP NOW</span>           
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function cartToggle(){
+      p = document.querySelector('.cart-dropdown');
+      p.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
